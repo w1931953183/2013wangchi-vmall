@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* 样式重置 */
+
+/* 使用某标签时添加 */
+html,
+body,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select,
+figure,
+section,
+nav,
+header,
+footer,
+article,
+aside{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: '微软雅黑';
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+	/* 清除ul li ol默认样式 */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 16px;
+	font-weight: normal;
+	/* 不加粗 */
+}
+
+b,
+strong {
+	font-weight: normal;
+	/* 不加粗 */
+}
+
+i,
+em {
+	font-style: normal;
+	/* 不倾斜 */
+}
+
+a,
+u {
+	text-decoration: none;
+	color: #666;
+	/* 取消下划线 */
+}
+
+img {
+	border: 0;
+	display: block;
+}
+
+input,
+fieldset {
+	outline: none;
+	/* 去除框 */
+	border: 0;
+}
+
+.clearfix:after {
+	/* 万能清除浮动法 */
+	content: '.';
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	display: block;
+	visibility: hidden;
+}
+
+.clearfix {
+	/* 适应IE浏览器 */
+	zoom: 1;
+}
