@@ -1,0 +1,1882 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link rel="shortcut icon" href="https://www.vmall.com/favicon.ico" />
+		<link href="https://res8.vmallres.com/20210112/css/echannel/ec.core.base.min.css?20170722" rel="stylesheet" type="text/css">
+		<link href="https://res8.vmallres.com/20210112/css/echannel/index.min.css?20170320" rel="stylesheet" type="text/css">
+	</head>
+	<body class="wide">
+		<style>
+			.minicart-pro-item .pro-other .p-title span.p-mini-tag-suit {
+    display: block;
+    border-radius: 2px;
+    background: #ca141d;
+    color: #fff;
+    width: 42px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    border: none;
+}
+.minicart-pro-item .pro-other li.disabled .p-title span.p-mini-tag-suit {
+    color: #fff;
+}
+</style>
+		<div class="top-banner" id="top-banner-block"></div>
+
+		<div class="shortcut">
+			<div class="layout">
+				<div class="s-sub">
+					<ul>
+						<li>
+							<a href="https://www.vmall.com">首页</a>
+						</li>
+						<li>
+							<a href="https://consumer.huawei.com/cn/" target="_blank">华为官网</a>
+						</li>
+						<li>
+							<a href="https://club.huawei.com" target="_blank">花粉俱乐部</a>
+						</li>
+						<li>
+							<a href="https://www.vmall.com/priority" class="js-priorityCode" rel="nofollow">V码(优购码)</a>
+						</li>
+						<li>
+							<a href="/company" target="_blank">企业购</a>
+						</li>
+						<li class="js-enterprise" id="li-enterprise-preferential" style="display:none;">
+							.
+						</li>
+						<li>
+							<a href="javascript:;" class="js-select-region">Select Region</a>
+						</li>
+						<li>
+							<div class="s-dropdown">
+								<div class="h">
+									<a class="icon-dropdown">更多精彩</a>
+									&nbsp;
+								</div>
+								<div class="b">
+									<div class="dropdown-more w-119">
+										<dl>
+											<dt>
+												<a href="https://emui.huawei.com/cn/" target="_blank">EMUI</a>
+											</dt>
+											<dt>
+												<a href="https://appstore.huawei.com/" target="_blank">应用市场</a>
+											</dt>
+											<dt>
+												<a href="https://cloud.huawei.com" target="_blank">华为终端云空间</a>
+											</dt>
+											<dt>
+												<a href="https://developer.huawei.com/" target="_blank">开发者联盟</a>
+											</dt>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="s-main ">
+					<img src="https://res.vmallres.com/20210112/images/echannel/bg/bg71.png" class="hide">
+					<ul>
+						<li id="unlogin_status">
+							<div id="top_unlogin" class="header-toolbar">
+								<!-- 2017-02-15-头部-工具栏-焦点为header-toolbar-item增加ClassName:hover -->
+								<div class="header-toolbar-item">
+									<div class="i-login">
+										<div class="h">
+											<div class="">
+												<a href="" rel="nofollow">&nbsp;&nbsp;注册</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li id="login_status" class="hide">
+							<div id="top_login" class="header-toolbar hide">
+								<div class="s-dropdown">
+									<div class="h h-wide" id="up_loginName-hover">
+										<a class="icon-dropdown" href="https://www.vmall.com/member?t=1611312603441" rel="nofollow" target="_blank"
+										 onclick="pushLoginMsg('已登录','用户名')"><span id="up_loginName"></span></a>&nbsp;
+									</div>
+									<div class="b">
+										<!-- 2017-06-19-个人信息-start -->
+										<div class="dropdown-i-mall">
+											<div class="i-mall-prompt clearfix">
+												<div class="user-head fl">
+													<p class="user-img">
+														<a href="https://www.vmall.com/member?t=1611312603441timestamp" rel="nofollow" timeType="timestamp"
+														 target="_blank" onclick="pushLoginMsg('已登录','头像')">
+															<img id="customerPic" src="https://res.vmallres.com/20210112/images/echannel/misc/img_not_logged_in.png"
+															 alt="默认头像" imgpath="https://res.vmallres.com/20210112/images" />
+														</a>
+													</p>
+												</div>
+												<div class="user-info fl">
+													<div id="user-vip-level-tips-index" class="user-level icon-vip-level-0">
+														<em></em>
+														<p><span id="canvas-index" style="width: 0%"></span></p>
+													</div>
+													<div class="user-info-detail clearfix" id="vip-info">
+														<a id="authentication_y" class="icon-realname hide">已实名</a>
+														<a id="authentication_n" href="https://www.vmall.com/authmember/accesstoken" rel="nofollow" class="icon-realname disabled hide"
+														 onclick="pushLoginMsg('已登录','未实名')">未实名</a>
+														<a class="icon-mail" href="https://www.vmall.com/member/msg?t=1611312603441timestamp" rel="nofollow"
+														 timeType="timestamp" onclick="pushLoginMsg('已登录','消息中心')">消息(<span id="top-newMsgCount">0</span>)</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="i-mall-uc">
+												<dl class="clearfix">
+													<dt><span class="fl">我的订单</span><a class="fr" href="https://www.vmall.com/member/order?t=1611312603441timestamp"
+														 timeType="timestamp" onclick="pushLoginMsg('已登录','更多')">更多</a></dt>
+												</dl>
+												<div class="i-mall-uc-con">
+													<dl class="clearfix">
+														<dd><a href="https://www.vmall.com/member/order?t=1611312603441timestamp&tab=unpaid" timeType="timestamp"
+															 onclick="pushLoginMsg('已登录','待付款')">待付款</a></dd>
+														<dd><a href="https://www.vmall.com/member/order?t=1611312603441timestamp&tab=send" timeType="timestamp"
+															 onclick="pushLoginMsg('已登录','待收货')">待收货</a></dd>
+														<dd><a href="https://www.vmall.com/member/order?t=1611312603441timestamp&tab=nocomment" timeType="timestamp"
+															 onclick="pushLoginMsg('已登录','待评价')">待评价</a></dd>
+														<dd><a href="https://www.vmall.com/member/exchange?t=1611312603441timestamp" timeType="timestamp" onclick="pushLoginMsg('已登录','退换货')">退换货</a></dd>
+														<dd><a href="https://www.vmall.com/member/recycle/index/aihuishou?t=1611312603441timestamp" timeType="timestamp"
+															 onclick="pushLoginMsg('已登录','旧机回收')">旧机回收</a></dd>
+													</dl>
+												</div>
+											</div>
+
+											<div class="i-mall-huaban">
+												<ul class="clearfix">
+													<li>
+														<a href="https://www.vmall.com/member/newpoint?t=1611312603441" target="_blank" id="point" onclick="pushLoginMsg('已登录','积分')">
+															<p class="p-price"><span id="userPointBalance">--</span></p>
+															<p class="p-dec">积分</p>
+														</a>
+													</li>
+													<li>
+														<a href="https://www.vmall.com/member/coupon?t=1611312603441" rel="nofollow" target="_blank" onclick="pushLoginMsg('已登录','优惠券')">
+															<p class="p-price"><span id="top-couponCount">--</span></p>
+															<p class="p-dec">优惠券</p>
+														</a>
+													</li>
+													<li>
+														<a href="https://www.vmall.com/member/balance?t=1611312603441" rel="nofollow" target="_blank" onclick="pushLoginMsg('已登录','代金券')">
+															<p class="p-price"><span id="balanceAmount">--</span></p>
+															<p class="p-dec">代金券</p>
+														</a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="i-out">
+												<a href="javascript:;" onclick="ec.logout()" rel="nofollow">退出登录</a>
+											</div>
+										</div>
+										<!-- 2017-06-19-个人信息-end -->
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<!-- <li><a href="https://www.vmall.com/member/order?t=1611312603441timestamp" timeType="timestamp" onclick = "pushMyOrderMsg()">我的订单</a></li>-->
+						<li><a href="javascript:;" timeType="timestamp" onclick="pushMyOrderMsg()">我的订单</a></li>
+
+						<li>
+							<div class="s-dropdown s-dropdown-link">
+								<div class="h">
+									<a class="icon-dropdown">客户服务</a>
+								</div>
+								<div class="b">
+									<div class="dropdown-more">
+										<dl>
+											<dt><a href="https://www.vmall.com/help/index.html" target="_blank">服务中心</a></dt>
+											<dt><a href="javascript:;" onclick="pushShortCutHelp()">联系客服</a></dt>
+											<input type="hidden" id="shortcutServiceId" value="https://celia.consumer.huawei.com/vmall/#/?businessUUID=902d812b8bdb44e089e34544fb5d77e2" />
+										</dl>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="s-dropdown">
+								<div class="h">
+									<a href="#" target="_blank" class="icon-dropdown">网站导航</a>
+								</div>
+								<div class="b">
+									<div class="dropdown-navs clearfix">
+										<p>
+											<a href="https://www.vmall.com"></a>
+										</p>
+										<div class="dropdown-navs-icon">
+											<a href="https://www.vmall.com"><span style="font-size:0;"> </span>商城首页</a>
+										</div>
+										<p></p>
+										<p>
+											<br />
+										</p>
+										<div class="fl" style="width:185.0px;margin-top:22.0px;margin-bottom:20.0px;">
+											<div class="bold f16 black" style="margin-bottom:8.0px;">
+												频道
+											</div>
+											<div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/huawei" target="_blank">华为专区</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="http://company.vmall.com/client.html" target="_blank">企业购</a>
+												</div>
+											</div>
+										</div>
+										<div class="fl" style="width:185.0px;margin-top:22.0px;margin-bottom:20.0px;">
+											<div class="bold f16 black" style="margin-bottom:8.0px;">
+												产品
+											</div>
+											<div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-36" target="_blank">手机</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-676" target="_blank">笔记本</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-678" target="_blank">平板</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-59" target="_blank">智能穿戴</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-714" target="_blank">智能家居</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-646" target="_blank">智慧屏</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-652" target="_blank">耳机音箱</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-54" target="_blank">热销配件</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-43" target="_blank">生态产品</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/list-34" target="_blank">增值服务</a>
+												</div>
+											</div>
+										</div>
+										<div class="fl" style="width:185.0px;margin-top:22.0px;margin-bottom:20.0px;">
+											<div class="bold f16 black" style="margin-bottom:8.0px;">
+												增值服务
+											</div>
+											<div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://vmall.aihuishou.com" target="_blank">以旧换新</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/order/tcsProductIndex" target="_blank">补购保障</a>
+												</div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/order/batteryRenew" target="_blank">一口价换电池</a>
+												</div>
+											</div>
+										</div>
+										<div class="fl" style="width:185.0px;margin-top:22.0px;margin-bottom:20.0px;">
+											<div class="bold f16 black" style="margin-bottom:8.0px;">
+												会员
+											</div>
+											<div>
+												<div class="fl" style="width:80.0px;overflow:hidden;margin-bottom:4.0px;">
+													<a href="https://www.vmall.com/privilege" target="_blank">会员频道</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="downloadApp">
+							<div class="s-dropdown" data-tpl="jTplDownloadApp">
+								<div class="h">
+									<a class="icon-dropdown">手机版</a>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="s-dropdown s-dropdown-minicart">
+								<div class="h h-wide" id="header-toolbar-minicart">
+									<a href="/cart2?t=1611312603441timestamp" class="icon-minicart" rel="nofollow" timeType="timestamp" target="blank"
+									 onclick="pushMyCartMsg()">
+										<span>购物车(<span id="header-cart-total">0</span>)</span>
+									</a>
+								</div>
+								<div class="b" id="header-toolbar-minicart-content">
+									<!-- 2017-06-19-迷你购物车-start -->
+									<div class="dropdown-minicart">
+										<div class="minicart-pro-empty minicart-pro-empty-index" id="minicart-pro-empty">
+											<p><span class="icon-minicart"></span></p>
+											<p id="cartInfo">您的购物车是空的，赶紧选购吧~</p>
+
+										</div>
+										<div class="minicart-pro-list minicart-pro-list-scroll hide" id="minicart-pro-list-block">
+											<ul id="minicart-goods-list"></ul>
+											<div class="minicart-pro-settleup" id="minicart-pro-settleup">
+												<p>
+													<span>总计：</span>
+													<span><b id="micro-cart-totalPrice">&yen;&nbsp;0</b><s id="micro-cart-totalOriginPrice">&yen;&nbsp;0</s></span>
+												</p>
+												<a class="button-minicart" id="button-minicart-go2confirm" href="javascript:;" onclick="ec.minicart.confirm()">结算</a>
+												<a class="button-minicart disabled" id="disbutton-minicart-go2confirm" style="display:none;">结算</a>
+											</div>
+										</div>
+									</div>
+									<!-- 2017-06-19-迷你购物车-end -->
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 2017-06-19-捷径栏-end -->
+		<input type="hidden" value="" id="context" />
+		<input type="hidden" value="vmall_index" id="vmall_index" />
+		<div id="ec-binding-phone-1" class="ec-binding-phone-box hide">
+
+		</div>
+		<div class="header">
+			<div class="layout">
+				<div class="left">
+					<!-- 2017-02-15-logo-start -->
+					<div class="logo">
+						<a href="" title="华为商城">
+							<img src="https&#x3a;&#x2f;&#x2f;res.vmallres.com&#x2f;pimages&#x2f;&#x2f;common&#x2f;config&#x2f;logo&#x2f;SXppnESYv4K11DBxDFc2.png"
+							 alt="华为商城" />
+						</a>
+					</div>
+					<!-- 2017-02-15-logo-end -->
+
+					<!-- 2017-06-19-导航-start -->
+					<div class="naver">
+						<ul class="clearfix">
+							<ul id="naver-list">
+								<li class="img" id="huawei">
+									<a href="https://sale.vmall.com/huaweizone.html" target="_blank">
+										<img src="https://res.vmallres.com/pimages//navigation/icon/GrguiqzHENWVYHYWyHBM.png">
+									</a>
+								</li>
+								<li id="mosaier">
+									<a href="https://sale.vmall.com/mossel.html" target="_blank">
+
+										<span>莫塞尔专区</span>
+									</a>
+								</li>
+								<li id="huawei">
+									<a href="https://sale.vmall.com/cjg5.html" target="_blank">
+
+										<span>场景购</span>
+									</a>
+								</li>
+								<li id="huawei">
+									<a href="https://sale.vmall.com/smarthome.html" target="_blank">
+
+										<span>智慧生活</span>
+									</a>
+								</li>
+								<li id="huawei">
+									<a href="https://sale.vmall.com/pseries.html" target="_blank">
+
+										<span>P40系列</span>
+									</a>
+								</li>
+								<li id="huawei">
+									<a href="https://sale.vmall.com/nhj2021.html" target="_blank">
+
+										<span>年货节</span>
+									</a>
+								</li>
+							</ul>
+						</ul>
+					</div>
+					<!-- 2017-06-19-导航-end -->
+				</div>
+
+				<div class="right">
+					<!-- 2017-02-15-搜索条-焦点为search-form增加className:hover -start -->
+					<div class="search-bar relative" id="searchBar-area">
+						<div class="search-bar-form" id="search-bar-form">
+							<form method="get" onsubmit="return search(this)">
+								<input type="text" class="text" maxlength="200" id="search-kw" autocomplete="off" />
+								<input type="submit" class="button iconfont" value="&#xe604;" />
+								<input type="hidden" id="channelType" name="channelType" value="0" />
+								<input type="hidden" id="default-search" value="nova&#x20;3i&#x7c;&#x8363;&#x8000;&#x20;Note10" />
+							</form>
+						</div>
+						<div class="search-bar-key" id="search-bar-key">
+							<div class="searchBar-key">
+								<a href="https&#x3a;&#x2f;&#x2f;sale.vmall.com&#x2f;mate.html" onclick="pushHotSearchMsg('Mate40\u7CFB\u5217');"
+								 style="color:" target="_blank" rel="nofollow">Mate40&#x7cfb;&#x5217;</a>
+								<a href="javascript:void(0);" onclick="searchFunc('P40'); return false;" style="color:" rel="nofollow">P40</a>
+							</div>
+						</div>
+						<div class="search-bar-history">
+							<div id="search-history" class="con hide">
+								<p>
+									<label>历史记录</label><span id="cleanUp" class="search-history-btn">清除</span>
+								</p>
+								<ul id="search-history-list"></ul>
+							</div>
+							<div id="search-key" class="con hide">
+								<p>
+									<label>热门搜索</label>
+								</p>
+								<ul id="search-key-list"></ul>
+							</div>
+						</div>
+					</div>
+					<!-- 2017-02-15-搜索条-end -->
+				</div>
+			</div>
+		</div><!-- 2017-02-15-头部-end -->
+		<div class="naver-main">
+			<div class="layout">
+
+
+				<!-- 20130909-导航-start -->
+				<!-- 20130909-导航-end -->
+				<!-- 20140823-分类-start -->
+				<div class="category category-index" id="category-block">
+					<!-- 20170223-分类-start -->
+					<div class="b">
+						<ol class="category-list">
+							<!-- 鼠标悬停增加ClassName： hover -->
+							<li id="zxnav_0" class="category-item ">
+								<input id="zxnav_0_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_0_name" type="hidden" autocomplete="off" value="手机">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="list-36" target="_blank">
+											<span>手机</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="HUAWEI Mate系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-76" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/14651510730611515641.png">
+
+												<p><span>HUAWEI Mate系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="HUAWEI P系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-285" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/Dfv6Z1jNUpkSdQEfjU40.png">
+
+												<p><span>HUAWEI P系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="HUAWEI nova系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-277" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/JtWD6wvaxu0qmHbN2tbO.png">
+
+												<p><span>HUAWEI nova系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为畅享系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-275" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/wJHIfRVWj3kjLp9RoTBN.png">
+
+												<p><span>华为畅享系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="HUAWEI 麦芒系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-81" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/93515799859519751539.png">
+
+												<p><span>HUAWEI 麦芒系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="list-36" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_1" class="category-item odd">
+								<input id="zxnav_1_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_1_name" type="hidden" autocomplete="off" value="智能穿戴与运动健康">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="list-59" target="_blank">
+											<span>智能穿戴与运动健康</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智能手表">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-247" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/bvJbZEMQTr1qy29qnvxZ.png">
+
+												<p><span>智能手表</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="儿童手表">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-674" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/sYl3EZsnaJp74kySK0uW.png">
+
+												<p><span>儿童手表</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智能手环">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-241" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/Op9zTFnetpE2UBz72lZ6.png">
+
+												<p><span>智能手环</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="VR">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-329" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/7rB1eW3yTzlmsJxUhz4o.png">
+
+												<p><span>VR</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智能体脂秤">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-672" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/svCuLCsIylj3EagzlFJm.png">
+
+												<p><span>智能体脂秤</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="穿戴配件">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-588" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/71700453489515400717.png">
+
+												<p><span>穿戴配件</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="list-59" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_2" class="category-item ">
+								<input id="zxnav_2_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_2_name" type="hidden" autocomplete="off" value="耳机音箱眼镜">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="list-652" target="_blank">
+											<span>耳机音箱眼镜</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="真无线耳机">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-656" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/62195671320617659126.png">
+
+												<p><span>真无线耳机</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="有线耳机">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-654" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/8GZSNEOIyFTlKHGXJIUp.jpg">
+
+												<p><span>有线耳机</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="蓝牙耳机">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-658" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/65908671320617680956.png">
+
+												<p><span>蓝牙耳机</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="蓝牙音箱">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-708" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/15350771320617705351.png">
+
+												<p><span>蓝牙音箱</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智能眼镜">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-710" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/DeNI79kOsHbW8IXBE7Rh.png">
+
+												<p><span>智能眼镜</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智能音箱">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-712" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/ponGt6tOncpW9tyJZhwC.png">
+
+												<p><span>智能音箱</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="list-652" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_3" class="category-item odd">
+								<input id="zxnav_3_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_3_name" type="hidden" autocomplete="off" value="智慧屏">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="list-646" target="_blank">
+											<span>智慧屏</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为智慧屏">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-740" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/jCygCJMv6ginekIsCBmu.png">
+
+												<p><span>华为智慧屏</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智慧屏配件">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-650" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/17005453489515450071.png">
+
+												<p><span>智慧屏配件</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="list-646" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_4" class="category-item ">
+								<input id="zxnav_4_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_4_name" type="hidden" autocomplete="off" value="笔记本">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="list-676" target="_blank">
+											<span>笔记本</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为MateBook X系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-680" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/RfnzRjvwIx1VTVm8xHfk.png">
+
+												<p><span>华为MateBook X系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为MateBook系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-682" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/plqBwqiWNT7w3S1oHify.png">
+
+												<p><span>华为MateBook系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为MateBook D系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-684" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/tDI1s1C6u0UNK3kpjX35.png">
+
+												<p><span>华为MateBook D系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为MateBook B系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-812" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/91536469069516463519.png">
+
+												<p><span>华为MateBook B系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="个人电脑配件">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-734" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/76194353489515349167.png">
+
+												<p><span>个人电脑配件</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="电脑包">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-814" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/53990553489515509935.jpg">
+
+												<p><span>电脑包</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="list-676" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_5" class="category-item odd">
+								<input id="zxnav_5_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_5_name" type="hidden" autocomplete="off" value="平板">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="list-678" target="_blank">
+											<span>平板</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为MatePad 系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-692" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/SoXonWnoeMUuz9KZRGyw.png">
+
+												<p><span>华为MatePad 系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为畅享 系列">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-694" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/xrtZtMAu7qwZRV7drG4A.png">
+
+												<p><span>华为畅享 系列</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="平板配件">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-736" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/21657453489515475612.png">
+
+												<p><span>平板配件</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="list-678" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_6" class="category-item ">
+								<input id="zxnav_6_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_6_name" type="hidden" autocomplete="off" value="智能路由">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="/list-714" target="_blank">
+											<span>智能路由</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智能路由">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-716" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/CSkYxTgopbtV6bLHOxWq.png">
+
+												<p><span>智能路由</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="移动路由">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-718" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/httvqlH4j44xjH2Fkoeb.png">
+
+												<p><span>移动路由</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="/list-714" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_7" class="category-item odd">
+								<input id="zxnav_7_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_7_name" type="hidden" autocomplete="off" value="配件">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="list-54" target="_blank">
+											<span>配件</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="充电器/线材">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-58" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/iXXgaQhk3RhRNcb3dUhX.png">
+
+												<p><span>充电器/线材</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="移动电源">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-56" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/navigation/jSg15QyIzY9GE4mVOHaI.jpg">
+
+												<p><span>移动电源</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="自拍杆/支架">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-231" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/UkPqRhFdsfuw0Mgon0lW.png">
+
+												<p><span>自拍杆/支架</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="摄像机/镜头">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-235" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/e7VsKW9NLDvxDXhBMFZD.png">
+
+												<p><span>摄像机/镜头</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="生活周边">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-237" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/navigation/B7R6qLbvn8J6DbwODyWS.png">
+
+												<p><span>生活周边</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="保护壳">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-580" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/navigation/RyT80PAF3dD0VUy9XTgz.png">
+
+												<p><span>保护壳</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="保护套">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-582" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/navigation/nxlajbLtHHaH00OhSaAv.png">
+
+												<p><span>保护套</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="贴膜">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-584" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/navigation/UWVgAL2WFNeoVHZRRE8s.png">
+
+												<p><span>贴膜</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="个人电脑配件">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-734" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/Xqw5avmFrpr7LGyNTZE0.png">
+
+												<p><span>个人电脑配件</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="电脑包">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-814" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/18243553489515534281.jpg">
+
+												<p><span>电脑包</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="平板配件">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-736" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/4PoI3AWlpGikrJtR0gfY.png">
+
+												<p><span>平板配件</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智慧屏配件">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-650" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/oYGaqUtNyOAa8gj1a3Pc.png">
+
+												<p><span>智慧屏配件</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="穿戴配件">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-588" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/navigation/ecDhrcKmmX2lMEJ6EWUN.png">
+
+												<p><span>穿戴配件</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="list-54" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_8" class="category-item ">
+								<input id="zxnav_8_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_8_name" type="hidden" autocomplete="off" value="生态产品">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="list-43" target="_blank">
+											<span>生态产品</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="智能灯光">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-371" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/navigation/0fiZED1M3bzCZCtrmVuv.png">
+
+												<p><span>智能灯光</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="生活电器">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-421" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/iR28UGaUlGGtocEkV5vg.png">
+
+												<p><span>生活电器</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="数码周边">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-423" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/CjXb7nAKCcLrhloNO14u.png">
+
+												<p><span>数码周边</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="环境卫士">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-373" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/Hbh7GYts0Ye1ozqXQsqC.png">
+
+												<p><span>环境卫士</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="安防门锁">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-379" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/U8DruLnlMn8Mn4l8ankk.png">
+
+												<p><span>安防门锁</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="健康保健">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-403" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/RJO1wsBU6rsbJeXf0kAl.png">
+
+												<p><span>健康保健</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="运动健身">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-640" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/gGcXeKvu6bIKZUwMJhuK.png">
+
+												<p><span>运动健身</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="户外出行">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-375" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/5Rf9Nz2tA6T0Hl7LQVGn.png">
+
+												<p><span>户外出行</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="厨电卫浴">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-377" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/Su3PP0R5phG77pi2PjHs.png">
+
+												<p><span>厨电卫浴</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="影音娱乐">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-407" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/pAQE9qGrvT2kYOGERdmr.png">
+
+												<p><span>影音娱乐</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="个护美妆">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-381" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/isXiE0yeEU46E2DolmYs.png">
+
+												<p><span>个护美妆</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="list-43" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_9" class="category-item odd">
+								<input id="zxnav_9_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_9_name" type="hidden" autocomplete="off" value="美食酒饮">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="/list-820" target="_blank">
+											<span>美食酒饮</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="甄选美酒">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-822" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/55741948201614914755.png">
+
+												<p><span>甄选美酒</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="严选良食">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-824" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/59609058201615090695.png">
+
+												<p><span>严选良食</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="/list-820" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="zxnav_10" class="category-item ">
+								<input id="zxnav_10_flag" type="hidden" autocomplete="off" value="no">
+								<input id="zxnav_10_name" type="hidden" autocomplete="off" value="增值服务&amp;企业商用">
+								<div class="category-item-bg">
+									<div class="category-info">
+										<a href="/list-34" target="_blank">
+											<span>增值服务&amp;企业商用</span>
+										</a>
+										<i class=""></i>
+									</div>
+								</div>
+								<div class="category-panels none">
+									<ul class="subcate-list clearfix">
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为视频卡">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-726" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/ZQnJL2WVUmZvVDkFIDRE.png">
+
+												<p><span>华为视频卡</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="花币卡">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-728" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/druWEKy6zCanbd02FQhl.png">
+
+												<p><span>花币卡</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为音乐卡">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-730" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/qTEFwRvC8TEQ6qyHvIoB.png">
+
+												<p><span>华为音乐卡</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="华为云空间">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-732" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/ppk5HSXix5wsEv4KY0KQ.png">
+
+												<p><span>华为云空间</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="电池更换服务">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-622" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/8J0Q5RpbK23FoBD4nX2h.png">
+
+												<p><span>电池更换服务</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="AI 计算平台">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="list-594" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/9xgKp8DlHGYOJTcuc4Qx.png">
+
+												<p><span>AI 计算平台</span></p>
+											</a>
+										</li>
+										<li class="subcate-item">
+											<input id="child_name" type="hidden" value="企业智慧屏">
+											<input id="child_status" type="hidden" value="1">
+											<input id="child_type" type="hidden" value="1">
+											<a href="/list-818" target="_blank">
+												<img class="j-lazy" src="https://res.vmallres.com/20200731/images/echannel/icon/icon5.gif" data-src="https://res.vmallres.com/pimages//pages/frontCategory/96313949890614931369.png">
+
+												<p><span>企业智慧屏</span></p>
+											</a>
+										</li>
+										<li class="subcate-btn">
+											<a href="/list-34" target="_blank">查看全部</a>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+						</ol>
+					</div>
+					<!-- 20170223-分类-end -->
+
+					<!-- 20140823-分类-end -->
+
+				</div>
+			</div>
+		</div>
+
+		<!--双12 header增加背景图的 字体颜色改变-->
+		<!-- 20130904-热门板-start -->
+		<div class="hot-board hot-board-index">
+			<!--ads start-->
+			<div class="ec-slider" id="index_slider">
+				<ul>
+					<li ID='firstImg' class="ec-slider-item" style="background:url('https://res.vmallres.com/pimages//pages/picImages/13317285111618271331c.jpg') 50% 0px no-repeat ;">
+						<div style="width:100%;" class="ec-slider-item-img">
+							<img src="https://res.vmallres.com/pimages//pages/picImages/13317285111618271331c.jpg" style="display:none;" />
+							<a style="width:100%;height:550px;display:block;" href="https://sale.vmall.com/nhj2021.html" target="_blank"
+							 onclick="pushSliderMsg('https://res.vmallres.com/pimages//pages/picImages/13317285111618271331c.jpg','https://sale.vmall.com/nhj2021.html','1')"></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<ul></ul>
+			<ul></ul>
+			<div class="mask"><span></span></div>
+			<!--ads end-->
+		</div><!-- 20130904-热门板-end -->
+
+		<!--//20161123 弹出框-->
+
+
+		<!-- 2017-02-15-菜单栏-start -->
+		<div class="home-channel-menu">
+
+			<div class="layout relative">
+
+
+				<div class="channel-floor-0 relative">
+					<div class="h">
+						<div class="home-channel-main">
+							<ul class="home-channel-list clearfix home-channel-img6">
+								<li class="fl s1">
+									<div id="gg_login" class="i-mall-prompt clearfix hide">
+										<div class="relative fl w-name">
+											<a href="/member?t=1611312603446timestamp" rel="nofollow" timeType="timestamp" onclick="pushMemberMsg('头像','/member?t=1611312603446timestamp')">
+												<img id="gg_customerPic" src="https://res.vmallres.com/20210112/images/echannel/misc/img_not_logged_in.png"
+												 alt="">
+											</a>
+										</div>
+										<div class="fl">
+											<div class="w-info">您好！<span id="gg_loginName"></span>。</div>
+
+											<div class="w-btn">
+												<a id="oldPeople" style="display:none" class="new" href="/member/msg?t=1611312603446timestamp" onclick="pushMemberMsg('消息中心','/member/msg?t=1611312603446timestamp')">消息中心</a>
+												<a id="newPeople" class="new" href="https://sale.vmall.com/welcome.html" target="_blank" onclick="pushMemberMsg('新人福利','https://sale.vmall.com/welcome.html')">新人福利</a>
+												<a class="" href="/privilege" target="_blank" onclick="pushMemberMsg('特权频道','/privilege')">会员频道</a>
+											</div>
+										</div>
+									</div>
+									<div id="gg_unlogin" class="i-mall-prompt clearfix">
+										<div class="relative fl w-name">
+											<img src="https://res.vmallres.com/20210112/images/echannel/misc/img_not_logged_in.png" alt="">
+										</div>
+										<div class="fl">
+											<div id="gg_login_url" class="w-reg">
+												您好！请
+												<script>document.write('<a href="javascript:;"  rel="nofollow"  onclick = "pushMemberMsg(\'登录\',\'https://id1.cloud.huawei.com/CAS/remoteLogin?loginChannel=26000000&reqClientType=26&lang=zh-cn&loginUrl=https%3A%2F%2Fid1.cloud.huawei.com%2FCAS%2Fportal%2FloginAuth.html&service=https%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3D'+ec.encodeForJS(encodeURIComponent(encodeURIComponent(window.location.href)))+'\')">登录</a>');</script>
+												<span>&nbsp;/&nbsp;</span>
+												<a href="https://id1.cloud.huawei.com/CAS/portal/userRegister/regbyphone.html?service=https://www.vmall.com/account/caslogin&loginChannel=26000000&reqClientType=26&lang=zh-cn"
+												 rel="nofollow" target="_blank" onclick="pushMemberMsg('注册','https://id1.cloud.huawei.com/CAS/portal/userRegister/regbyphone.html?service=https://www.vmall.com/account/caslogin&loginChannel=26000000&reqClientType=26&lang=zh-cn')">注册</a>
+
+											</div>
+											<div class="w-btn">
+												<a class="new" href="https://sale.vmall.com/welcome.html" target="_blank" onclick="pushMemberMsg('新人福利','https://sale.vmall.com/welcome.html')">新人福利</a>
+												<a class="" href="/privilege" target="_blank" onclick="pushMemberMsg('会员频道','/privilege')">会员频道</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="fl s2">
+									<ul class="clearfix">
+										<li>
+											<a href="http://company.vmall.com" target="_blank" onclick="pushMsgMenu(1,'300010901','PC首页功能导航_\u4F01\u4E1A\u8D2D\u7279\u60E0','http\x3A\x2F\x2Fcompany.vmall.com')">
+												<div class="p-img">
+													<img class="img0" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+													 alt="企业购特惠">
+												</div>
+												<div class="p-dec">企业购特惠</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.vmall.com/privilege" target="_blank" onclick="pushMsgMenu(2,'300010901','PC首页功能导航_\u4F1A\u5458\u9886\u5238','https\x3A\x2F\x2Fwww.vmall.com\x2Fprivilege')">
+												<div class="p-img">
+													<img class="img1" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+													 alt="会员领券">
+												</div>
+												<div class="p-dec">会员领券</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://vmall.aihuishou.com" target="_blank" onclick="pushMsgMenu(3,'300010901','PC首页功能导航_\u4EE5\u65E7\u6362\u65B0','https\x3A\x2F\x2Fvmall.aihuishou.com')">
+												<div class="p-img">
+													<img class="img2" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+													 alt="以旧换新">
+												</div>
+												<div class="p-dec">以旧换新</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://sale.vmall.com/mate.html" target="_blank" onclick="pushMsgMenu(4,'300010901','PC首页功能导航_Mate\x2040\u7CFB\u5217','https\x3A\x2F\x2Fsale.vmall.com\x2Fmate.html')">
+												<div class="p-img">
+													<img class="img3" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+													 alt="Mate 40系列">
+												</div>
+												<div class="p-dec">Mate 40系列</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://sale.vmall.com/hwsmh.html" target="_blank" onclick="pushMsgMenu(5,'300010901','PC首页功能导航_\u534E\u4E3A\u6570\u7801','https\x3A\x2F\x2Fsale.vmall.com\x2Fhwsmh.html')">
+												<div class="p-img">
+													<img class="img4" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+													 alt="华为数码">
+												</div>
+												<div class="p-dec">华为数码</div>
+											</a>
+										</li>
+										<li>
+											<a href="https://sale.vmall.com/smarthome.html" target="_blank" onclick="pushMsgMenu(6,'300010901','PC首页功能导航_\u667A\u6167\u751F\u6D3B','https\x3A\x2F\x2Fsale.vmall.com\x2Fsmarthome.html')">
+												<div class="p-img">
+													<img class="img5" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+													 alt="智慧生活">
+												</div>
+												<div class="p-dec">智慧生活</div>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="fl s3">
+									<div class="p-notice clearfix">
+										<div class="icon-notice fl">
+											<a href="/notice-list" title="商城公告" onclick="pushMsgNotice('2')">
+												<span>公告</span>
+											</a>
+										</div>
+										<div class="p-notice-content" id="notice">
+											<ul class="p-notice-list fl">
+												<li><a href="/notice-12302" target="_blank" onclick="pushMsgNotice('1')">&#x7b7e;&#x5230;&#x62bd;&#x534e;&#x4e3a;Mate&#x20;40&#x20;RS&#x4fdd;&#x65f6;&#x6377;&#x8bbe;&#x8ba1;&#x4f18;&#x8d2d;&#x7801;&#x6d3b;&#x52a8;</a></li>
+												<li><a href="/notice-12296" target="_blank" onclick="pushMsgNotice('1')">&#x9009;&#x597d;&#x793c;&#x20;&#x8fc7;&#x65b0;&#x5e74;&#x20;&#x6d3b;&#x52a8;&#x516c;&#x544a;</a></li>
+												<li><a href="/notice-12290" target="_blank" onclick="pushMsgNotice('1')">&#x5e74;&#x8d27;&#x8282;&#x4e3b;&#x4f1a;&#x573a;&#x516c;&#x544a;</a></li>
+												<li><a href="/notice-12284" target="_blank" onclick="pushMsgNotice('1')">2021&#x5e74;&#x8d27;&#x8282;&#x552e;&#x540e;&#x670d;&#x52a1;&#x6743;&#x76ca;</a></li>
+												<li><a href="/notice-12278" target="_blank" onclick="pushMsgNotice('1')">&#x8d2d;&#x673a;&#x7528;&#x6237;&#x6709;&#x5956;&#x8c03;&#x67e5;&#xff08;MateBook&#x20;X&#x20;&#x2f;&#x20;X&#x20;Pro&#x20;2020&#x6b3e;&#x20;&#x7b14;&#x8bb0;&#x672c;&#x7535;&#x8111;&#xff09;&#x4e2d;&#x5956;&#x540d;&#x5355;</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="p-info">
+										<ul class="clearfix">
+											<li>
+												<a href="https://www.vmall.com/priority" target="_blank" rel="nofollow" onclick="pushMsgMenu(1,'300011101','PC首页功能导航_\u4F18\u8D2D\u7801','https\x3A\x2F\x2Fwww.vmall.com\x2Fpriority')">
+													<span><img class="img0" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+														 alt="优购码"></span>优购码
+												</a>
+											</li>
+											<li>
+												<a href="https://www.vmall.com/order/batteryRenew" target="_blank" rel="nofollow" onclick="pushMsgMenu(2,'300011101','PC首页功能导航_\u66F4\u6362\u7535\u6C60','https\x3A\x2F\x2Fwww.vmall.com\x2Forder\x2FbatteryRenew')">
+													<span><img class="img1" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+														 alt="更换电池"></span>更换电池
+												</a>
+											</li>
+											<li>
+												<a href="https://www.vmall.com/order/tcsProductIndex" target="_blank" rel="nofollow" onclick="pushMsgMenu(3,'300011101','PC首页功能导航_\u8865\u8D2D\u4FDD\u969C','https\x3A\x2F\x2Fwww.vmall.com\x2Forder\x2FtcsProductIndex')">
+													<span><img class="img2" src="https://res.vmallres.com/pimages//squaredInfo/icon/5/41bdad2881949cf9ba844b8a7041644c.png"
+														 alt="补购保障"></span>补购保障
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="">
+							<!-- 公告下方广告图index_top3_below_slider -->
+							<ul class="home-promo-list clearfix">
+								<li><a target="_blank" href="https://www.vmall.com/product/10086726905036.html" class="item"><img alt="华为" src="https://res.vmallres.com/pimages//pages/picImages/99501166011616110599.jpg" /></a></li>
+								<li><a target="_blank" href="https://sale.vmall.com/nova.html" class="item"><img alt="华为" src="https://res.vmallres.com/pimages//pages/picImages/93727147701614172739.jpg" /></a></li>
+								<li><a target="_blank" href="https://www.vmall.com/product/10086368169358.html" class="item"><img alt="华为" src="https://res.vmallres.com/pimages//pages/picImages/12091857480615819021.jpg" /></a></li>
+								<li><a target="_blank" href="https://www.vmall.com/product/10086528985095.html" class="item"><img alt="荣耀" src="https://res.vmallres.com/pimages//pages/picImages/61925390211619352916.png" /></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="b">
+						<!--20170222 限时特惠 start-->
+						<!--20170222 限时特惠 end-->
+					</div>
+					<div class="b">
+						<!--20170222 热销单品 start-->
+						<!-- 20170222-首页--热销单品-start -->
+						<div class="home-recommend-goods home-hot-goods index-channel-floor">
+							<div class="h">
+								<h2 class="title change-title">热销单品</h2>
+							</div>
+							<div class="b clearfix">
+								<div class="span-232 fl">
+									<ul class="grid-promo-list clearfix">
+										<input type="hidden" id="contengID" value="0-6">
+										<li class="grid-items grid-items-sm">
+											<a class="thumb" href="https&#x3a;&#x2f;&#x2f;www.vmall.com&#x2f;product&#x2f;10086593188778.html" target="_blank"
+											 onclick="pushHomeHotGoodsAdvertMsg('https://res0.vmallres.com/pimages/\x2FfrontLocation\x2Fcontent\x2F84050343901614305048.jpg','https\x3A\x2F\x2Fwww.vmall.com\x2Fproduct\x2F10086593188778.html')">
+												<img src="https://res0.vmallres.com/pimages/&#x2f;frontLocation&#x2f;content&#x2f;84050343901614305048.jpg"
+												 alt="" />
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="span-968 fl">
+									<ul class="grid-list clearfix">
+										<!--通过添加current 来实现 hover效果-->
+										<li class="grid-items ">
+											<a class="thumb" href="/product/10086199502267.html" target="_blank" onclick="pushHomeHotGoodsMsg(this,2,'10086395859855')">
+												<p class="grid-img">
+													<img src="https://res0.vmallres.com/pimages/&#x2f;product&#x2f;6941487211210&#x2f;428_428_FAD19670648EDFCF959E7322E54A1A758BE0CD66A83455C6mp.png"
+													 alt="HUAWEI&#x20;nova&#x20;8&#x20;Pro&#x20;8GB&#x2b;128GB&#x20;&#x5168;&#x7f51;&#x901a;&#x7248;&#xff08;&#x4eae;&#x9ed1;&#x8272;&#xff09;" />
+												</p>
+												<div class="grid-title">HUAWEI&#x20;nova&#x20;8&#x20;Pro</div>
+												<p class="grid-desc">10&#x3a;08&#x9650;&#x65f6;&#x5f00;&#x552e;&nbsp; </p>
+												<p class="grid-price">&yen;3999</p>
+											</a>
+										</li>
+										<!--通过添加current 来实现 hover效果-->
+										<li class="grid-items ">
+											<a class="thumb" href="/product/10086529347830.html" target="_blank" onclick="pushHomeHotGoodsMsg(this,3,'10086130804844')">
+												<p class="grid-img">
+													<img src="https://res0.vmallres.com/pimages/&#x2f;product&#x2f;6927819503451&#x2f;428_428_1BF03DFFDA537B9EC251DB7555CA8910CA1926323AB53E85mp.png"
+													 alt="&#x8212;&#x534e;&#x20;E3&#x7b80;&#x7ea6;&#x65f6;&#x5c1a;&#x667a;&#x80fd;&#x8dd1;&#x6b65;&#x673a;SH-T3100-T2&#x20;&#x6d45;&#x7070;&#x94f6;&#x20;&#x28;&#x652f;&#x6301;HUAWEI&#x20;HiLink&#x29;" />
+												</p>
+												<div class="grid-title">&#x8212;&#x534e;&#x20;E3&#x7b80;&#x7ea6;&#x65f6;&#x5c1a;&#x667a;&#x80fd;&#x8dd1;&#x6b65;&#x673a;</div>
+												<p class="grid-desc">&#x5168;&#x9762;&#x5c4f;&#x8dd1;&#x53f0;&nbsp; </p>
+												<p class="grid-price">&yen;1799</p>
+												<p class="grid-tips">
+													<em class="thumb"><span class="color01" style="background-color:#68BEFF">&#x65b0;&#x54c1;</span></em>
+												</p>
+											</a>
+										</li>
+										<!--通过添加current 来实现 hover效果-->
+										<li class="grid-items ">
+											<a class="thumb" href="/product/10086715691479.html" target="_blank" onclick="pushHomeHotGoodsMsg(this,4,'10086823033810')">
+												<p class="grid-img">
+													<img src="https://res0.vmallres.com/pimages/&#x2f;product&#x2f;6901443381517&#x2f;428_428_0410C56E4DFF825A527CBD3369F4D394F1699311CF51F864mp.png"
+													 alt="HUAWEI&#x20;P40&#x20;Pro&#x20;5G&#x20;&#x5168;&#x7f51;&#x901a;&#x20;8GB&#x2b;128GB&#xff08;&#x96f6;&#x5ea6;&#x767d;&#xff09;" />
+												</p>
+												<div class="grid-title">HUAWEI&#x20;P40&#x20;Pro&#x20;5G</div>
+												<p class="grid-desc">&#x9650;&#x91cf;&#x8d60;&#x4fdd;&#x62a4;&#x58f3;&nbsp; </p>
+												<p class="grid-price">&yen;5988</p>
+											</a>
+										</li>
+										<!--通过添加current 来实现 hover效果-->
+										<li class="grid-items ">
+											<a class="thumb" href="/product/10086882694240.html" target="_blank" onclick="pushHomeHotGoodsMsg(this,5,'10086162155151')">
+												<p class="grid-img">
+													<img src="https://res0.vmallres.com/pimages/&#x2f;product&#x2f;6901443398027&#x2f;428_428_C5B3EEB31BA081CF605FE04A1118DEF332F4C3003CC60ECEmp.png"
+													 alt="HUAWEI&#x20;P40&#x20;Pro&#x2b;&#x20;5G&#x20;&#x5168;&#x7f51;&#x901a;&#x20;8GB&#x2b;256GB&#xff08;&#x9676;&#x74f7;&#x767d;&#xff09;" />
+												</p>
+												<div class="grid-title">HUAWEI&#x20;P40&#x20;Pro&#x2b;&#x20;5G</div>
+												<p class="grid-desc">6&#x671f;&#x514d;&#x606f;&#x2b;&#x9650;&#x91cf;&#x8d60;&#x4fdd;&#x62a4;&#x58f3;&nbsp;
+												</p>
+												<p class="grid-price">&yen;7988</p>
+											</a>
+										</li>
+										<!--通过添加current 来实现 hover效果-->
+										<li class="grid-items ">
+											<a class="thumb" href="/product/10086063422898.html" target="_blank" onclick="pushHomeHotGoodsMsg(this,6,'10086766876989')">
+												<p class="grid-img">
+													<img src="https://res0.vmallres.com/pimages/&#x2f;product&#x2f;6901443415670&#x2f;428_428_02CAB92CA3E7CA5A99995191A776C00D87C32CC39A4B1605mp.png"
+													 alt="HUAWEI&#x20;Mate&#x20;30E&#x20;Pro&#x20;5G&#x20;&#x5168;&#x7f51;&#x901a;&#x20;8GB&#x2b;128GB&#xff08;&#x4eae;&#x9ed1;&#x8272;&#xff09;" />
+												</p>
+												<div class="grid-title">HUAWEI&#x20;Mate&#x20;30E&#x20;Pro&#x20;5G</div>
+												<p class="grid-desc">&#x4eab;6&#x671f;&#x514d;&#x606f;&nbsp; </p>
+												<p class="grid-price">&yen;5299</p>
+											</a>
+										</li>
+										<!--通过添加current 来实现 hover效果-->
+										<li class="grid-items ">
+											<a class="thumb" href="/product/10086625298212.html" target="_blank" onclick="pushHomeHotGoodsMsg(this,7,'10086936692865')">
+												<p class="grid-img">
+													<img src="https://res0.vmallres.com/pimages/&#x2f;product&#x2f;6959095501692&#x2f;428_428_7A5D00C5979DEEA43614F5862A8CE903CDCB05BC0BD160D7mp.png"
+													 alt="VOC&#x20;&#x667a;&#x80fd;&#x95e8;&#x9501;X8&#x20;&#x6807;&#x51c6;&#x9501;&#x4f53;&#x20;&#x9ed1;&#x8272;&#xff08;&#x652f;&#x6301;HUAWEI&#x20;HiLink&#xff09;" />
+												</p>
+												<div class="grid-title">VOC&#x20;&#x667a;&#x80fd;&#x95e8;&#x9501;X8</div>
+												<p class="grid-desc">&#x94f6;&#x884c;&#x7ea7;&#x52a0;&#x5bc6;&#x82af;&#x7247;&nbsp; </p>
+												<p class="grid-price">&yen;1238</p>
+												<p class="grid-tips">
+													<em class="thumb"><span class="color01" style="background-color:#FF6A6E">&#x4e00;&#x63e1;&#x5373;&#x5f00;</span></em>
+												</p>
+											</a>
+										</li>
+										<!--通过添加current 来实现 hover效果-->
+										<li class="grid-items ">
+											<a class="thumb" href="/product/10086375798519.html" target="_blank" onclick="pushHomeHotGoodsMsg(this,8,'10086200090025')">
+												<p class="grid-img">
+													<img src="https://res0.vmallres.com/pimages/&#x2f;product&#x2f;6941487207626&#x2f;428_428_64A6BB5D9B19C61B2C8724E1D12E02E0DF740091C034401Bmp.png"
+													 alt="HUAWEI&#x20;Mate&#x20;40&#x20;Pro&#x2b;&#x20;5G&#x20;&#x5168;&#x7f51;&#x901a;&#x20;12GB&#x2b;256GB&#xff08;&#x9676;&#x74f7;&#x9ed1;&#xff09;" />
+												</p>
+												<div class="grid-title">HUAWEI&#x20;Mate&#x20;40&#x20;Pro&#x2b;&#x20;5G</div>
+												<p class="grid-desc">&#x4eab;&#x591a;&#x91cd;&#x6743;&#x76ca;&nbsp; </p>
+												<p class="grid-price">&yen;8999</p>
+											</a>
+										</li>
+										<!--通过添加current 来实现 hover效果-->
+										<li class="grid-items ">
+											<a class="thumb" href="/product/10086269031277.html" target="_blank" onclick="pushHomeHotGoodsMsg(this,9,'10086589829798')">
+												<p class="grid-img">
+													<img src="https://res0.vmallres.com/pimages/&#x2f;product&#x2f;6901443404926&#x2f;428_428_EC057BA9FC304F37A60287C1D9E761FACF0EF559795D340Fmp.png"
+													 alt="HUAWEI&#x20;MateBook&#x20;X&#x20;2020&#x6b3e;&#x20;&#x96c6;&#x663e;&#x20;i5&#x20;16G&#x20;512G&#xff08;&#x51b0;&#x971c;&#x94f6;&#xff09;13&#x82f1;&#x5bf8;3K&#x89e6;&#x63a7;&#x5168;&#x9762;&#x5c4f;&#x20;&#x8f7b;&#x81f3;1kg&#x8d85;&#x8f7b;&#x8584;&#x534e;&#x4e3a;&#x7b14;&#x8bb0;&#x672c;&#x7535;&#x8111;" />
+												</p>
+												<div class="grid-title">HUAWEI&#x20;MateBook&#x20;X</div>
+												<p class="grid-desc">&#x4eab;3&#x671f;&#x514d;&#x606f;&nbsp; </p>
+												<p class="grid-price">&yen;8988</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- 20170222-首页-热销单品-end -->
+
+						<!--20170222 热销单品 end-->
+					</div>
+
+					<!--20170223 精品推荐 start-->
+					<div class="b" id="j-goods-recommend"></div>
+					<!--20170223 精品推荐 end-->
+
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<!-- 2017-02-15-菜单栏-end -->
+
+		<!-- 20160812 首页轮播图下方 end -->
+
+		<div class="channel-floor index-channel-floor">
+			<div class="layout">
+				<!-- 2017-02-15-banner-1200*110-start -->
+				<div class="home-banner">
+					<!-- 2017-02-15-banner-图片轮换-start -->
+					<div class="home-banner-slideshow" data-floor="0">
+						<!-- 20130903-ad-图片轮换-start -->
+						<div class="banner-slideshow">
+							<div class="hr-27"></div>
+							<div id="m-banner" class="ec-slider">
+								<ul class="ec-slider-list">
+									<li class="ec-slider-item" style="background:;">
+										<div class="ec-slider-item-img"><a href="https://sale.vmall.com/hwcompany.html" onclick="_paq.push([&#39;trackLink&#39;,&#39;首页中间通栏广告第1位&#39;, &#39;link&#39;, &#39;&#39;]);ec.code.addAnalytics({hicloud:true});"
+											 target="_blank"><img src="https://res.vmallres.com/pimages//pages/picImages/34865934011613956843.jpg" /></a></div>
+									</li>
+									<li class="ec-slider-item" style="background:;">
+										<div class="ec-slider-item-img"><a href="https://vmall.aihuishou.com/" onclick="_paq.push([&#39;trackLink&#39;,&#39;首页中间通栏广告第2位&#39;, &#39;link&#39;, &#39;&#39;]);ec.code.addAnalytics({hicloud:true});"
+											 target="_blank"><img src="https://res.vmallres.com/pimages//pages/picImages/67271003490610017276.png" /></a></div>
+									</li>
+									<li class="ec-slider-item" style="background:;">
+										<div class="ec-slider-item-img"><a href="https://sale.vmall.com/nova.html" onclick="_paq.push([&#39;trackLink&#39;,&#39;首页中间通栏广告第3位&#39;, &#39;link&#39;, &#39;&#39;]);ec.code.addAnalytics({hicloud:true});"
+											 target="_blank"><img src="https://res.vmallres.com/pimages//pages/picImages/71725352701615352717.jpg" /></a></div>
+									</li>
+									<li class="ec-slider-item" style="background:;">
+										<div class="ec-slider-item-img"><a href="https://sale.vmall.com/mossel.html" onclick="_paq.push([&#39;trackLink&#39;,&#39;首页中间通栏广告第4位&#39;, &#39;link&#39;, &#39;&#39;]);ec.code.addAnalytics({hicloud:true});"
+											 target="_blank"><img src="https://res.vmallres.com/pimages//pages/picImages/17092352701615329071.jpg" /></a></div>
+									</li>
+								</ul>
+							</div>
+							<div class="hr-13"></div>
+
+						</div>
+					</div><!-- 2017-02-15-banner-图片轮换-end -->
+				</div><!-- 2017-02-15-banner-1200*110-end -->
+			</div>
+		</div>
+
+
+		<!-- 2017-05-12-HOME right side navigation -start -->
+		<!-- 2017-05-12-HOME right side navigation -end -->
+
+		<!-- 2017-02-15-HOME GOOGLIST-start -->
+		<div class="home-channel-container relative index-channel-floor" id="j-goods-list"></div>
+		<!-- 2017-02-15-HOME GOOGLIST-end -->
+
+		<!-- 2017-02-15-HOME FOOTER-start -->
+		<div id="j-footer"></div>
+		<!-- 2017-02-15-HOME FOOTER-start -->
+
+		<!-- 2017-02-15-top-banner-start -->
+		<script id="top-banner" type="text/x-template">
+			<!-- 顶部banner -->
+	<div class="top-banner-max hide" id="top-banner-max">
+		<div class="top-banner-img">
+			
+			<a title="折叠" href="javascript:;" class="button-top-banner-min" id="top-banner-max-toggle">-</a>
+		</div>
+	</div>
+	<div class="top-banner-min hide" id="top-banner-min">
+		<div class="top-banner-img">
+			<p style="font-size:0;">
+			<a style="display:block;position:relative;width:1920px;text-align:center;left:50%;background-color:;margin-left:-960px;" title="华为" target="_blank" href="https://sale.vmall.com/huaweizone.html"><img src="https://res.vmallres.com/pimages//pages/picImages/94090031801613009049.jpg" alt="华为" /></a>
+</p>
+			<a title="展开" href="javascript:;" class="button-top-banner-max hide" id="top-banner-min-toggle">+</a>
+			<a class="button-top-banner-close" href="javascript:;" title="关闭" id="top-banner-min-close">关闭</a>
+		</div>
+	</div>
+	<!-- 顶部banner end -->
+</script>
+		<!-- 2017-02-15-top-banner-end -->
+
+		<!-- 2017-09-21-bottom-banner-start -->
+
+		<!-- 2017-09-21-bottom-banner-end -->
+		<input type="hidden" id="loadIndexType" value="index" />
+
+
+		<!--确认对话框-->
+		<div id="ec_ui_confirm" class="popup-area popup-define-area hide">
+			<div class="b">
+				<p id="ec_ui_confirm_msg"></p>
+				<div class="popup-button-area"><a id="ec_ui_confirm_yes" href="javascript:;" class="button-action-yes"><span>是</span></a><a
+					 id="ec_ui_confirm_no" href="javascript:;" class="button-action-no"><span>否</span></a></div>
+			</div>
+			<div class="f"><s class="icon-arrow-down"></s></div>
+		</div>
+
+		<!--新确认对话框-->
+		<div id="ec_ui_confirm_new" class="popup-area-new hide">
+			<div class="b">
+				<p id="ec_ui_confirm_new_msg"></p>
+				<div class="popup-button-area"><a id="ec_ui_confirm_new_yes" href="javascript:;" class="box-button-style-1"><span>是</span></a><a
+					 id="ec_ui_confirm_new_no" href="javascript:;" class="box-button-style-1"><span>否</span></a></div>
+			</div>
+			<div class="f"><s class="icon-arrow-down-new"></s></div>
+		</div>
+
+		<!--提示对话框-->
+		<div id="ec_ui_tips" class="popup-area popup-define-area hide">
+			<div class="b">
+				<p id="ec_ui_tips_msg" class="tac"></p>
+				<div class="popup-button-area tac"><a id="ec_ui_tips_yes" href="javascript:;" class="button-action-yes" title="确定"><span>确定</span></a></div>
+			</div>
+			<div class="f"><s class="icon-arrow-down"></s></div>
+		</div>
+
+		<div class="float-main">
+			<div class="event-float-layout index-channel-floor">
+				<!--添加 fixed  position: fixed !important;top: 20px;z-index: 500;-->
+				<div class="event-float">
+					<div>
+						<ul class="hover-list">
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- 2018-10-26-悬浮工具栏-start -->
+			<!-- 20170518-商品简介-按钮-start -->
+			<div class="hungBar j-hungBar">
+				<div class="hungBar-content">
+					<div class="hungBar-common">
+						<a target="_blank" onclick="pushRightHelpMsg(1)" href="/cart2" timeType="timestamp" class="hungBar-cart"><span
+							 style="display:none;"></span><i>购物车</i></a>
+						<a id="tools-nav-service-robotim" onclick="pushRightServiceHelpMsg(2)" href="javascript:;" class="hungBar-service"><i>在线客服</i></a>
+						<input type="hidden" name="serviceHref" id="servicehrefId" value="" />
+						<input type="hidden" name="serviceProxyHref" id="serviceProxyHrefId" value="" />
+						<a id="tools-nav-survery" href="https://www.vmall.com/help/index.html" target="_blank" class="hungBar-feedback"><i>自助服务</i></a>
+						<a href="javascript:;" class="hungBar-top" id="hungBar-top"><i>返回顶部</i></a>
+					</div>
+				</div>
+			</div>
+			<!-- 2018-10-26-悬浮工具栏-end -->
+		</div>
+
+		<!--意见反馈box-->
+		<div id="survery-box" class="ol_box_4 hide" style="width:600px;">
+			<div class="box-ct">
+				<div class="box-header">
+					<div class="box-tl"></div>
+					<div class="box-tc">
+						<div class="box-tc1"></div>
+						<div class="box-tc2"><a class="box-close" title="关闭" onclick="ec.survery.close();" href="javascript:;"></a><span
+							 class="box-title">意见反馈</span></div>
+					</div>
+					<div class="box-tr"></div>
+				</div>
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td class="box-cl"></td>
+							<td class="box-cc">
+								<div class="box-content">
+									<!-- -表单-意见反馈-start -->
+									<div class="form-feedback-area">
+										<div class="b">
+											<div class="form-edit-area">
+												<form autocomplete="off" id="form-feedback">
+													<div class="form-edit-table">
+														<table cellspacing="0" cellpadding="0" border="0">
+															<tbody>
+																<tr>
+																	<td>
+																		<select name="type" id="surverytype">
+																			<option>请选择疑问类型</option>
+																			<option>商品质量（手机、平板等软、硬件质量）</option>
+																			<option>商品缺货</option>
+																			<option>物流发货（发货快慢、发错货、送件人态度等）</option>
+																			<option>售后服务（服务网点、维修、退换货、客服）</option>
+																			<option>网站问题（商城功能失效、不好用等）</option>
+																			<option>其他问题</option>
+																		</select>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<b>您的问题与建议</b><span id="errMsg"></span>
+																	</td>
+																</tr>
+																<tr>
+																	<td><textarea name="content" id="surveryContent" type="textarea" class="textarea"></textarea></td>
+																</tr>
+																<tr>
+																	<td><b>您的联系方式</b></td>
+																</tr>
+																<tr>
+																	<td><input type="text" name="contact" id="surveryContact"></td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="fl">
+																			<input type="text" maxlength="4" class="identify" name="code" id="surveryVerify" onkeyup="if(this.value.length==4){ec.survery.validate();}">&nbsp;&nbsp;<img
+																			 id="surveryVerifyImg" onclick="ec.survery.reloadCode()" class="vam" alt="验证码">&nbsp;&nbsp;&nbsp;&nbsp;<span
+																			 class="vam"><a class="u" href="javascript:;" onclick="ec.survery.reloadCode();">换一张</a></span>
+																		</div>
+																		<div class="fr">
+																			<a href="javascript:;" onclick="ec.survery.submit();" class="button-action-yes"><span>提交</span></a>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									<!-- -表单-意见反馈-end -->
+								</div>
+							</td>
+							<td class="box-cr"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="box-bottom">
+					<div class="box-bl"></div>
+					<div class="box-bc"></div>
+					<div class="box-br"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="globleParameter" class="hide" context="" stylePath="https://res8.vmallres.com/20210112/css" scriptPath="https://res9.vmallres.com/20210112/js"
+		 imagePath="https://res.vmallres.com/20210112/images" mediaPath="https://res.vmallres.com/pimages/"></div>
+
+		<form action="/order/confirmcart" id="miniCartForm" method="post"></form>
+	</body>
+</html>

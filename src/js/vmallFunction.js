@@ -958,3 +958,29 @@ function jiesuanRendere(dt){
 	`
 	return str
 }
+
+//登录注册
+function logZhu(){
+	//获取导航栏对象
+	const nav = document.querySelector(".nav")
+	//添加点击事件
+	nav.addEventListener("click",function(e){
+		var e = e || window.event
+		var target  = e.target || e.srcElement
+		//点击首页
+		if(target.innerHTML == "首页"){
+			//跳转到首页
+			window.location.href = "./index.html?user="+usernum
+		}
+		//点击请登录
+		if(target.innerHTML == "请登录"){
+			//跳转到登录页面
+			window.location.href = "./login.html?he="+window.location.href
+		}
+		//点击注册
+		if(target.innerHTML == "注册"){
+			//跳转到登录页面
+			window.location.href = "./zhuce.html?he="+window.location.href
+		}
+	})
+}

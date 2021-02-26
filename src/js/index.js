@@ -32,7 +32,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var phoneDuo = phone.querySelector("h3").firstElementChild
 	phoneDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1001&user=" + usernum
+		window.location.href = "./list.html?id=1001&user=" + usernum
 	})
 	//获取手机容器对象
 	var phoneRight = phone.querySelector(".phone-right")
@@ -44,7 +44,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var wearDuo = wear.querySelector("h3").firstElementChild
 	wearDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1002&user=" + usernum
+		window.location.href = "./list.html?id=1002&user=" + usernum
 	})
 	//获取智能穿戴与运动健康容器对象
 	var wearRight = wear.querySelector(".wear-right")
@@ -75,7 +75,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var goodsDuo = goods.querySelector("h3").firstElementChild
 	goodsDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1004&user=" + usernum
+		window.location.href = "./list.html?id=1004&user=" + usernum
 	})
 	//获取耳机音箱眼镜容器对象
 	var goodsRight = goods.querySelector(".goods-right")
@@ -89,7 +89,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var zhihuipDuo = zhihuip.querySelector("h3").firstElementChild
 	zhihuipDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1007&user=" + usernum
+		window.location.href = "./list.html?id=1007&user=" + usernum
 	})
 	//获取智慧屏容器对象
 	var zhihuipRight = zhihuip.querySelector(".zhihuip-right")
@@ -103,7 +103,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var bookDuo = book.querySelector("h3").firstElementChild
 	bookDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1003&user=" + usernum
+		window.location.href = "./list.html?id=1003&user=" + usernum
 	})
 	//获取笔记本电脑容器对象
 	var bookRight = book.querySelector(".book-right")
@@ -117,7 +117,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var flatDuo = flat.querySelector("h3").firstElementChild
 	flatDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1008&user=" + usernum
+		window.location.href = "./list.html?id=1008&user=" + usernum
 	})
 	//获取精品平板容器对象
 	var flatRight = flat.querySelector(".flat-right")
@@ -131,7 +131,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var routeDuo = route.querySelector("h3").firstElementChild
 	routeDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1005&user=" + usernum
+		window.location.href = "./list.html?id=1005&user=" + usernum
 	})
 	//获取智能路由容器对象
 	var routeRight = route.querySelector(".route-right")
@@ -145,7 +145,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var partsDuo = parts.querySelector("h3").firstElementChild
 	partsDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1007&user=" + usernum
+		window.location.href = "./list.html?id=1007&user=" + usernum
 	})
 	//获取通用配件容器对象
 	var partsRight = parts.querySelector(".parts-right")
@@ -159,7 +159,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var ecologyDuo = ecology.querySelector("h3").firstElementChild
 	ecologyDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1009&user=" + usernum
+		window.location.href = "./list.html?id=1009&user=" + usernum
 	})
 	//获取生态精品容器对象
 	var ecologyRight = ecology.querySelector(".ecology-right")
@@ -173,7 +173,7 @@ if (se.length > 0) {
 	//获取查看更多跳转对象、
 	var foodDuo = food.querySelector("h3").firstElementChild
 	foodDuo.addEventListener('click', function () {
-		window.location.href = "./list.html?val=1006&user=" + usernum
+		window.location.href = "./list.html?id=1006&user=" + usernum
 	})
 	//获取美酒容器对象
 	var foodRight = food.querySelector(".food-right")
@@ -501,7 +501,7 @@ $(".side-totop").find("li").click(function() {
 //点击购物车
 $(".side-show").find("li").click(function() {
 	//跳转到购物车页
-	window.location.href = "./shopcart.htnl?user="+usernum
+	window.location.href = "./shopcart.html?user="+usernum
 })
 //点击滚动到指定位置
 //给每个列表选项添加点击事件
@@ -541,7 +541,7 @@ $(".every-top").find("ol").each(function(i){
 		//编码后通过URL传输参数
 		$text = encodeURI($text)
 		//跳转到列表页
-		window.location.href = "./list.html?val="+$text+"&user="+usernum
+		window.location.href = "./list.html?id="+$text+"&user="+usernum
 	})
 })
 //搜索框获得改变
@@ -567,7 +567,7 @@ $(".header-right-text").find("[type='button']").click(function(){
 		$val = encodeURI($val)
 		console.log($val)
 		//跳转到列表页
-		window.location.href = "./list.html?val="+$val+"&user="+usernum
+		window.location.href = "./list.html?id="+$val+"&user="+usernum
 	}else{
 		alert("你还没用输入！！！")
 	}
@@ -585,7 +585,7 @@ $(".search-bar-key").children().each(function(){
 		//编码后通过URL传输参数
 		$text = encodeURI($text)
 		//跳转到列表页
-		window.location.href = "./list.html?val="+$text+"&user="+usernum
+		window.location.href = "./list.html?id="+$text+"&user="+usernum
 	})
 })
 

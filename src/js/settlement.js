@@ -6,12 +6,14 @@ var usernum = se.split("=")[1].split("&")[0]
 var arrShops = se.split("=")[2]
 //判断是否登录
 if (se) {
-    //获取cookie值
-    var cook = getCookie(usernum)
-    //获取注册登录文本盒子
-    var text1 = document.querySelector(".nav-right").firstElementChild.children[0]
-    //渲染内容
-    text1.innerHTML = `<li><a href="javascript:;" style="color:#333">欢迎&nbsp;${cook}</a></li>`
+    if(usernum != "undefined"){
+		//获取cookie值
+		var cook = getCookie(usernum)
+		//获取注册登录文本盒子
+		var text1 = document.querySelector(".nav-right").firstElementChild.children[0]
+		//渲染内容
+		text1.innerHTML = `<li><a href="javascript:;" style="color:#333">欢迎&nbsp;${cook}</a></li>`
+	}
 } else {
     //跳转到登录页并传递网址
     window.location.href = "./login.html" + window.location.href
@@ -158,3 +160,6 @@ $(".submitorder").click(function() {
 		$(".address-box").css("display", "block")
 	}
 })
+
+//登录注册
+logZhu()

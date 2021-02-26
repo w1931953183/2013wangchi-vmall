@@ -25,6 +25,8 @@ navLeftIndex.addEventListener("click", function () {
 var routenav = document.querySelector('.routenav')
 //获取商品详情对象
 var goodsinfo = document.querySelector('.goodsinfo')
+//获取详情页盒子对象
+const xiangqingCenter = document.querySelector(".xiangqing-center")
 if (sea) {
 	(async function () {
 		var dt = await promiseAjax({
@@ -46,6 +48,8 @@ if (sea) {
 		routenav.innerHTML = str1
 		//渲染详情数据
 		goodsinfo.innerHTML = detailsRenderer(dt)
+		//渲染详情页数据
+		xiangqingCenter.innerHTML = dt.xiangqing
 		//小图左右滑动
 		//获取小图对象
 		const goodsinfoLeft = document.querySelector(".goodsinfo-left")
@@ -323,3 +327,5 @@ if (sea) {
 	alert("非法进入请退出!!!")
 	location.href = "./index.html"
 }
+//登录注册
+logZhu()

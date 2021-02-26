@@ -1,3 +1,15 @@
+//获取Seach值
+var se = location.search
+var arrse = se.split("=")
+var valurl;// 传入的域名参数
+//判断域名正则表达式
+var reg = /^http:\W{2}localhost/
+//判断携带参数是否为域名
+if(reg.test(arrse[1])){
+	valurl = arrse[1] + "=" + arrse[2].toString().split("&")[0]
+}else{
+	valurl = "";
+}
 // 获取表单对象
 const fr = document.querySelector("form")
 //获取用户名输入框
@@ -183,7 +195,7 @@ yes.addEventListener('click',function(e){
 				usernum.nextElementSibling.style.color = "red"
 			}else{
 				alert("注册成功!")
-				window.location.href = "./login.html?valnum="+valNum+"&valpass="+valPass
+				window.location.href = "./login.html?valnum="+valNum+"&valpass="+valPass+"&url="+valurl
 			}
 		})()
 	}else{

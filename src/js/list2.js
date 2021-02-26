@@ -33,9 +33,8 @@ if (s) {
 				data:"val="+s,
 				datatype:"json"
 			})
-			console.log(datas)
 			//渲染页面
-			xuanlan(datas)
+			xuanlan(datas,s)
 		})()
 	} else {
 		//通过ajax得到数据
@@ -46,15 +45,17 @@ if (s) {
 				datatype:"json"
 			})
 			//渲染页面
-			xuanlan(datas)
+			xuanlan(datas,s)
 		})()
 	}
 } else {
 	alert("非法进入！！！")
 	window.location.href = "./index.html"
 }
+//登录注册
+logZhu()
 
-function xuanlan(dt){
+function xuanlan(dt,ss){
 	if(dt.length <= 0){
 		// 清空分页器
 		pag.innerHTML = ""
@@ -65,15 +66,25 @@ function xuanlan(dt){
 		`
 		listBottom.firstElementChild.innerHTML = str
 	}
-	dt.forEach(itme => {
+	// dt.forEach(itme => {
 		//渲染路径导航
-		let routenavStr =
-			`
+		let routenavStr = ""
+		if(isNaN(ss)){
+			routenavStr =`
 			<ol class="breadcrumb clearfix">
-				<li><a href="./index.html">首页</a><i class="iconfont icon-you"></i></li>
-				<li><a href="javascript:;">${itme.keymain}</a></li>
+				<li><a href="./index.html?user=${usernum}">首页</a><i class="iconfont icon-you"></i></li>
+				<li><a href="javascript:;">${dt[0].keymain}</a><i class="iconfont icon-you"></i></li>
+				<li><a href="javascript:;">${ss}</a></li>
 			</ol>
 			`
+		}else{
+			routenavStr =`
+			<ol class="breadcrumb clearfix">
+				<li><a href="./index.html?user=${usernum}">首页</a><i class="iconfont icon-you"></i></li>
+				<li><a href="javascript:;">${dt[0].keymain}</a></li>
+			</ol>
+			`
+		}
 		routenav.innerHTML = routenavStr
 		//渲染选择框
 		let listTopStr =
@@ -81,7 +92,7 @@ function xuanlan(dt){
 			<ol>
 				<li>
 					<span>分类:</span>
-					<u>${itme.keymain}</u>
+					<u>${dt[0].keymain}</u>
 				</li>
 				<li>
 					<span>选择类型:</span>
@@ -198,5 +209,5 @@ function xuanlan(dt){
 			// 渲染数据
 			listRenderer(pag, data, listBottom.firstElementChild)
 		})
-	})
+	// })
 }

@@ -5,22 +5,49 @@ var arrse = se.split("=")
 var reg = /^http:\W{2}localhost/
 var valnum;//账号
 var valpass;//密码
-var valurl;
+var valurl;// 传入的域名
+var valid ;// 传入的域名携带的参数
 //获取输入框对象
 const usernum = document.querySelector("[name=loginuesr]")
 const userpass = document.querySelector("[name=loginpass]")
 //判断是否从注册页面传了参数
 if (se.length > 0) {
-	//判断第二个元素是不是域名
-	if (reg.test(arrse[1])) {
-		valurl = arrse[1] + "=" + arrse[2].toString().split("&")[0]
-	} else {
-		//获取相应的参数
-		valnum = se.split("=")[1].toString().split("&")[0]
-		valpass = se.split("=")[2]
-		//给输入框赋值
-		usernum.value = valnum
-		userpass.value = valpass
+	//判断是否传入的参数有账号密码
+	if(se.indexOf("valnum") >= 0 && se.indexOf("valpass") >= 0){
+		//遍历
+		for(let i = 0;i < arrse.length ;i++){
+			// console.log(arrse[i])
+			if(arrse[i].indexOf("valnum") >= 0){
+				valnum = arrse[i+1].split("&")[0]
+				//给输入框赋值
+				usernum.value = valnum
+			}else if(arrse[i].indexOf("valpass") >= 0){
+				//判断是否有 & 这个符号
+				if(arrse[i+1].indexOf("&") >= 0){
+					valpass = arrse[i+1].split("&")[0]
+					//给输入框赋值
+					userpass.value = valpass
+				}else{
+					valpass = arrse[i+1]
+					//给输入框赋值
+					userpass.value = valpass
+				}
+			}
+		}
+	}
+	//遍历
+	for(let i = 0;i < arrse.length;i++){
+		//判断是否传入域名
+		if(reg.test(arrse[i])){
+			valurl = arrse[i].split("?")[0]
+		}
+	}
+	//判断是否传入 域名并且域名是否携带了参数 
+	if(se.split("?").length > 2){
+		//判断携带参数是否为 id
+		if(se.split("?")[se.split("?").length - 1].indexOf("id") >= 0){
+			valid = se.split("?")[se.split("?").length - 1].split("&")[0]
+		}
 	}
 } else {
 	//获取输入框的值
@@ -44,10 +71,13 @@ sublogin.addEventListener('click', function () {
 		// console.log(dt[0].username)
 		//判段是否为1
 		if (dt.length > 0) {
-			if (reg.test(arrse[1])) {
+			if (valid) {
 				setCookie(valnum, dt[0].username)
-				window.location.href = valurl + "&user=" + valnum
-			} else {
+				window.location.href = valurl + "?" + valid + "&user=" + valnum
+			} else if(valurl){
+				setCookie(valnum, dt[0].username)
+				window.location.href = valurl + "?user=" + valnum
+			}else{
 				//添加cookie
 				setCookie(valnum, dt[0].username)
 				alert("登录成功，点击跳转到首页")
